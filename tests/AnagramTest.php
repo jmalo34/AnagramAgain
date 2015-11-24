@@ -6,20 +6,20 @@
         function test_check_1()
         {
             //Arrange
-            $test_check = new Anagram($be_checked);
+            $test_check = new Anagram('bread');
             $input = 'br3ead';
 
             //Act
             $result = $test_check->check($input);
 
             //Assert
-            $this->assertEquals('NOPE', $result);
+            $this->assertEquals('YESSIR', $result);
         }
 
         // function test_check_2()
         // {
         //     //Arrange
-        //     $test_check = new Anagram;
+        //     $test_check = new Anagram($be_checked);
         //     $input = ;
         //
         //     //Act
