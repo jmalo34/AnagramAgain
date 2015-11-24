@@ -3,5 +3,5 @@ Input:  beard, br3ead
 Output:  TRUE
 
 SPEC 2:  function is case-insensitive
-Input:  BrEED
-Output:
+Input:  bread, BrE3AD
+Output:  bread

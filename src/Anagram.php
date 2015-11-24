@@ -12,7 +12,7 @@
         {
             $word = strtolower(preg_replace('/[^a-zA-Z]/', '', $word));
 
-            if ($word == $this->original)
+            if ($word == strtolower($this->original))
             {
                 $YorN = 'YESSIR';
             }
