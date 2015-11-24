@@ -9,3 +9,7 @@ Output:  YESSIR
 SPEC 3: if two respective words create identical arrays of letters, a match ('YESSIR') result is returned
 Input: bread, beard
 Output:  YESSIR
+
+SPEC 4:  partial matches return as true
+Input: bread, bar
+Output;  YESSIR 

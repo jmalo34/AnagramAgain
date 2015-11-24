@@ -41,5 +41,18 @@
             //Assert
             $this->assertEquals('YESSIR', $result);
         }
+
+        function test_check_4()
+        {
+            //Arrange
+            $test_check = new Anagram('bread');
+            $input = 'bar';
+
+            //Act
+            $result = $test_check->check($input);
+
+            //Assert
+            $this->assertEquals('YESSIR', $result);
+        }
     }
  ?>

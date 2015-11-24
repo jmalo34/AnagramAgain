@@ -13,9 +13,9 @@
 
     $app->get('anagramno', function() use($app)
     {
-        $my_Anagram = new Anagram;
-        $word = $my_Anagram->check($_GET['']);
-        return $app['twig']->render('anagramno.html.twig'), array('words' => $word));
+        $my_Anagram = new Anagram($_GET['original']);
+        $word = $my_Anagram->check($_GET['word']);
+        return $app['twig']->render('anagramno.html.twig', array('words' => $word));
     });
 
     return $app;
