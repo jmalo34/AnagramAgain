@@ -6,14 +6,14 @@
         function test_check_1()
         {
             //Arrange
-            $test_check = new Anagram;
+            $test_check = new Anagram($be_checked);
             $input = 'br3ead';
 
             //Act
             $result = $test_check->check($input);
 
             //Assert
-            $this->assertEquals('bread', $result);
+            $this->assertEquals('NOPE', $result);
         }
 
         // function test_check_2()

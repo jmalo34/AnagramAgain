@@ -1,7 +1,7 @@
 SPEC 1:  non-alphabetic characters are discarded
-Input:  br3ead
-Output:  bread
+Input:  beard, br3ead
+Output:  TRUE
 
-SPEC 2:  
-Input:
+SPEC 2:  function is case-insensitive
+Input:  BrEED
 Output:
