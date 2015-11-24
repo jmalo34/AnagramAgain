@@ -10,9 +10,14 @@
 
         function check($word)
         {
-            $word = strtolower(preg_replace('/[^a-zA-Z]/', '', $word));
+            $word = str_split(strtolower(preg_replace('/[^a-zA-Z]/', '', $word)));
 
-            if ($word == strtolower($this->original))
+            $remixed = str_split(strtolower($this->original));
+
+            sort($word);
+            sort($remixed);
+
+            if ((implode($word)) == (implode($remixed)))
             {
                 $YorN = 'YESSIR';
             }

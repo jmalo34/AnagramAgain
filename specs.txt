@@ -1,7 +1,11 @@
 SPEC 1:  non-alphabetic characters are discarded
 Input:  beard, br3ead
-Output:  TRUE
+Output:  YESSIR
 
 SPEC 2:  function is case-insensitive
 Input:  bread, BrE3AD
-Output:  bread
+Output:  YESSIR
+
+SPEC 3: if two respective words create identical arrays of letters, a match ('YESSIR') result is returned
+Input: bread, beard
+Output:  YESSIR
