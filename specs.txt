@@ -1,7 +1,7 @@
-SPEC 1:
-Input:
-Output:
+SPEC 1:  non-alphabetic characters are discarded
+Input:  br3ead
+Output:  bread
 
-SPEC 2:
+SPEC 2:  
 Input:
 Output:

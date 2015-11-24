@@ -3,16 +3,25 @@
     {
         private $original;
 
-        function __construct($original);
-        {
-            $this->$original = $original;
-        }
+        // function __construct($original)
+        // {
+        //     $this->original = $original;
+        // }
 
         function check($word)
         {
-            s
+            $word = strtolower(preg_replace('/[^a-zA-Z]/', '', $word));
 
-            return $YorN;
+            // if ($word == $this->original)
+            // {
+            //     $YorN = 'YESSIR';
+            // }
+            // else
+            // {
+            //     $YorN = 'NOPE';
+            // }
+
+            return $word;
         }
     }
  ?>

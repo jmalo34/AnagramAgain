@@ -7,26 +7,26 @@
         {
             //Arrange
             $test_check = new Anagram;
-            $input =;
+            $input = 'br3ead';
 
             //Act
             $result = $test_check->check($input);
 
             //Assert
-            $this->assertEquals(, $result);
+            $this->assertEquals('bread', $result);
         }
 
-        function test_check_2()
-        {
-            //Arrange
-            $test_check = new Anagram;
-            $input = ;
-
-            //Act
-            $result = $test_check->check($input);
-
-            //Assert
-            $this->assertEquals(, $result);
-        }
+        // function test_check_2()
+        // {
+        //     //Arrange
+        //     $test_check = new Anagram;
+        //     $input = ;
+        //
+        //     //Act
+        //     $result = $test_check->check($input);
+        //
+        //     //Assert
+        //     $this->assertEquals(, $result);
+        // }
     }
  ?>
