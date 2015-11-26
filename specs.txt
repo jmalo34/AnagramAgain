@@ -12,4 +12,8 @@ Output:  YESSIR
 
 SPEC 4:  partial matches return as true
 Input: bread, bar
-Output;  YESSIR 
+Output:  YESSIR
+
+SPEC 5:  the original word can be compared against multiple words
+Input: bread; beard, bred
+Output:  YESSIR, YESSIR

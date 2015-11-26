@@ -7,8 +7,15 @@
 <body>
     <div class='container'>
         <h1>Anagram</h1>
-        <h2>Any anagrams?</h2>
-        <p>{{ words }}</p>
+        {% if words is empty %}
+            <h3>No matches were found</h3>
+        {% else %}
+            <h4>The following words were indeed anagrams:</h4>
+        {% for word in words %}
+            {{ word.getAword }}
+        {% endfor %}
+        {% endif %}
+        <br>
         <a href='/'>home</a>
     </div>
 </body>
