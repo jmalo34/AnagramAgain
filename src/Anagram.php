@@ -30,15 +30,21 @@
 
             foreach ($word_list as $word)
             {
-                // $word = new Anagram($word);
                 $single_morph = str_split(strtolower(preg_replace('/[^a-zA-Z]/', '', $word)));
 
                 sort($single_morph);
+                $length = count($single_morph);
 
                 if ((implode($single_morph)) == (implode($remixed_the_word)))
                 {
                     array_push($yes_anagrams, new Anagram($word));
                 }
+                //partial matches
+                //use built-in functions to only check for matches in the array up until the length of the word
+                // elseif (($single_morph))
+                // {
+                //     array_push($yes_anagrams, new Anagram($word));
+                // }
             }
 
             return $yes_anagrams;

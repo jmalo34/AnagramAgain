@@ -3,7 +3,7 @@
 
     class AnagramTest extends PHPUnit_Framework_TestCase
     {
-        function test_check_1()
+        function test_check_nonalpha()
         {
             //Arrange
             $test_check = new Anagram('br3ead');
@@ -16,7 +16,7 @@
             $this->assertEquals('bread', $result);
         }
 
-        function test_check_2()
+        function test_check_casesense()
         {
             //Arrange
             $test_check = new Anagram('bread');
@@ -29,7 +29,7 @@
             $this->assertEquals('YESSIR', $result);
         }
 
-        function test_check_3()
+        function test_check_match()
         {
             //Arrange
             $test_check = new Anagram('bread');
@@ -42,7 +42,7 @@
             $this->assertEquals('YESSIR', $result);
         }
 
-        function test_check_4()
+        function test_check_partial()
         {
             //Arrange
             $test_check = new Anagram('bread');
